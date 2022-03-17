@@ -30,17 +30,15 @@ def create_data_json_file(dataset: Dataset):
             }
         }
         data = {
-            "doc": {
-                "artists": dataset[i]['artists'],
-                "context": dataset[i]['context'],
-                "genre": dataset[i]['genre'],
-                "issue_date": dataset[i]['issuedate'],
-                "song_id": dataset[i]['song_id'],
-                "song_name": dataset[i]['song_name'],
-                "song_org_id": dataset[i]['song_org_id'],
-                "song_tags": dataset[i]['song_tags'],
-                "song_tags_tfidf": dataset[i]['song_tags_tfidf']
-            }
+            "artists": dataset[i]['artists'],
+            "context": dataset[i]['context'],
+            "genre": dataset[i]['genre'],
+            "issue_date": dataset[i]['issuedate'],
+            "song_id": dataset[i]['song_id'],
+            "song_name": dataset[i]['song_name'],
+            "song_org_id": dataset[i]['song_org_id'],
+            "song_tags": dataset[i]['song_tags'],
+            "song_tags_tfidf": dataset[i]['song_tags_tfidf']
         }
         queries.append(request)
         queries.append(data)
