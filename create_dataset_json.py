@@ -21,8 +21,7 @@ lyrics = LyricsDataset(path="./data/assets/melon_lyrics_v2")
 
 def create_data_json_file(dataset: Dataset):
     queries = deque()
-    # for i in range(1, len(dataset)+1):
-    for i in range(1,4):
+    for i in range(1, len(dataset)+1):
         request = {
             "create" : {
                 "_index": "lyrics",
