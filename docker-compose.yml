@@ -13,9 +13,9 @@ services:
   kibana:
     image: docker.elastic.co/kibana/kibana:7.9.1
     ports:
-      - "443:5601"
+      - "80:5601"
     expose:
-      - "443"
+      - "80"
     environment:
       SERVER_NAME: localhost
       ELASTICSEARCH_URL: http://elasticsearch:9200/
